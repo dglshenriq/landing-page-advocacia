@@ -1,0 +1,13 @@
+:root{
+  --primary:#550000;
+  --primary-light:#7a1f1f;
+  --primary-pale:#f4e7e2;
+  --bg:#fbf7f2;
+  --bg-alt:#f1e8db;
+  --ink:#211712;
+  --ink-muted:#6e5f56;
+  --accent:#a67c46;
+  --line:#e2d3bf;
+  --serif:'Fraunces', serif;
+  --sans:'Inter', sans-serif;
+}

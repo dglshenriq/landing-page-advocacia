@@ -1,0 +1,16 @@
+.contact{background:var(--bg-alt); border-top:1px solid var(--line);}
+.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px;}
+@media(max-width:860px){ .contact-grid{grid-template-columns:1fr;} }
+.info-list{margin-top:28px; display:flex; flex-direction:column; gap:20px;}
+.info-list div strong{display:block; font-size:12.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--primary); margin-bottom:4px;}
+.info-list div span{font-size:15px; color:var(--ink);}
+form{display:flex; flex-direction:column; gap:16px;}
+.field label{display:block; font-size:12.5px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--ink-muted); margin-bottom:6px;}
+.field input, .field textarea{
+  width:100%; border:1px solid var(--line); background:var(--bg);
+  padding:13px 14px; font-family:var(--sans); font-size:14.5px; color:var(--ink);
+  border-radius:2px;
+}
+.field textarea{resize:vertical; min-height:96px;}
+.field input::placeholder, .field textarea::placeholder{color:#a89a8f;}
+form .btn{margin-top:6px; align-self:flex-start;}
