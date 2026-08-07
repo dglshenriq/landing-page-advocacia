@@ -34,7 +34,7 @@ header {
   transition: color 0.2s;
 }
 .nav-links a:hover {
-  color: var(--primary);
+  color: var(--bg);
 }
 .btn {
   display: inline-flex;
@@ -51,11 +51,11 @@ header {
   white-space: nowrap;
 }
 .btn-primary {
-  background: var(--primary);
-  color: #fff;
+  background: var(--primary-pale);
+  color: var(--primary);
 }
 .btn-primary:hover {
-  background: var(--primary-light);
+  background: var(--bg);
 }
 .btn-ghost {
   border-color: var(--ink);
