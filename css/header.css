@@ -10,7 +10,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 32px;
+  padding: 20px;
 }
 .brand {
   font-family: var(--serif);
@@ -28,7 +28,7 @@ header .brand span {
   color: var(--bg);
 }
 .brand-logo {
-  height: 36px;
+  height: 50px;
   width: auto;
   display: block;
 }
@@ -60,12 +60,25 @@ header .brand span {
   transition: all 0.2s ease;
   white-space: nowrap;
 }
+
 .btn-primary {
+  padding: 10px 10px;
   background: var(--primary-pale);
   color: var(--primary);
 }
 .btn-primary:hover {
-  background: var(--bg);
+  background: var(--accent);
+  color: var(--primary-pale);
+}
+.btn-secondary {
+  padding: 13px 26px;
+  background: var(--primary);
+  color: var(--bg);
+}
+.btn-secondary:hover {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
 }
 .btn-ghost {
   border-color: var(--ink);
@@ -79,6 +92,9 @@ header .brand span {
   display: none;
 }
 @media (min-width: 860px) {
+  .btn-primary {
+    padding: 13px 26px;
+  }
   .nav-cta {
     display: inline-flex;
   }
