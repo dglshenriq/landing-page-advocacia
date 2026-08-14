@@ -10,17 +10,27 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 32px;
 }
 .brand {
   font-family: var(--serif);
   font-weight: 500;
   font-size: 19px;
   letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
 }
 .brand span {
-  color: var(--bg);
   font-style: italic;
+}
+header .brand,
+header .brand span {
+  color: var(--bg);
+}
+.brand-logo {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 .nav-links {
   display: flex;
