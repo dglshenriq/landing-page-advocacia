@@ -2,7 +2,7 @@
   --primary: #550000;
   --primary-light: #7a1f1f;
   --primary-pale: #f4e7e2;
-  --bg: #fdfbd4;
+  --bg: #fbf7f2;
   --bg-alt: #f1e8db;
   --ink: #211712;
   --ink-muted: #6e5f56;
@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: "Fraunces";
-  src: url("../fonts/Fraunces-Variable.woff2") format("woff2");
+  src: url("../fonts/Fraunces-Variable.ttf") format("truetype");
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
@@ -29,7 +29,7 @@
 /* Fraunces — versão itálica (usada em <em>, citações e o "Advocacia" da marca) */
 @font-face {
   font-family: "Fraunces";
-  src: url("../fonts/Fraunces-Italic-Variable.woff2") format("woff2");
+  src: url("../fonts/Fraunces-Italic-Variable.ttf") format("truetype");
   font-weight: 300 700;
   font-style: italic;
   font-display: swap;
@@ -38,7 +38,7 @@
 /* Inter — usada no corpo do texto, nav e botões */
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-Variable.woff2") format("woff2");
+  src: url("../fonts/Inter-Variable.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -67,16 +67,11 @@ img {
   margin: 0 auto;
   padding: 0 32px;
 }
-@media (max-width: 640px) {
-  .wrap {
-    padding: 0 20px;
-  }
-}
 
 /* Section Basics */
 
 section {
-  padding: 88px 0;
+  padding: 20px 0;
 }
 .section-head {
   max-width: 560px;
@@ -138,3 +133,11 @@ textarea:focus-visible {
   color: var(--ink-muted);
   letter-spacing: 0.04em;
 }
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 0 20px;
+  }
+}
+
+

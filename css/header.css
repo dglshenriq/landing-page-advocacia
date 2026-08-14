@@ -10,17 +10,27 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px;
 }
 .brand {
   font-family: var(--serif);
   font-weight: 500;
   font-size: 19px;
   letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
 }
 .brand span {
-  color: var(--bg);
   font-style: italic;
+}
+header .brand,
+header .brand span {
+  color: var(--bg);
+}
+.brand-logo {
+  height: 50px;
+  width: auto;
+  display: block;
 }
 .nav-links {
   display: flex;
@@ -50,12 +60,25 @@ header {
   transition: all 0.2s ease;
   white-space: nowrap;
 }
+
 .btn-primary {
+  padding: 10px 10px;
   background: var(--primary-pale);
   color: var(--primary);
 }
 .btn-primary:hover {
-  background: var(--bg);
+  background: var(--accent);
+  color: var(--primary-pale);
+}
+.btn-secondary {
+  padding: 13px 26px;
+  background: var(--primary);
+  color: var(--bg);
+}
+.btn-secondary:hover {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
 }
 .btn-ghost {
   border-color: var(--ink);
@@ -69,6 +92,9 @@ header {
   display: none;
 }
 @media (min-width: 860px) {
+  .btn-primary {
+    padding: 13px 26px;
+  }
   .nav-cta {
     display: inline-flex;
   }
