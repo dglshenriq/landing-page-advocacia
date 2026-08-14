@@ -1,5 +1,5 @@
 .hero{
-  padding:96px 0 80px;
+  padding:20px 0 20px;
   position:relative;
   overflow:hidden;
 }
@@ -42,7 +42,7 @@
      manter o selo e a legenda legíveis por cima. */
   background:
     linear-gradient(180deg, rgba(85,0,0,.25) 0%, rgba(85,0,0,.88) 100%),
-    var(--primary) url('../images/hero-foto.jpg') center/cover no-repeat;
+    var(--primary) url('../img/img-1.jpg') center/cover no-repeat;
 }
 .seal{
   position:absolute; top:28px; right:28px;
@@ -63,10 +63,19 @@
   width:100%;
 }
 .hero-visual .caption strong{
-  display:block; font-family:var(--serif); font-style:italic; font-size:17px; color:#fff; margin-bottom:4px;
+  display:block; 
+  font-family:var(--serif); 
+  font-style:italic; 
+  font-size:17px; 
+  color:#fff; 
+  margin-bottom:4px;
 }
 .hero-stats{
-  display:flex; gap:40px; margin-top:56px; flex-wrap:wrap;
+  display:flex; 
+  justify-content: center;
+  gap:40px; 
+  margin-top:56px; 
+  flex-wrap:wrap;
 }
 .hero-stats div{border-left:1px solid var(--line); padding-left:16px;}
 .hero-stats strong{display:block; font-family:var(--serif); font-size:26px; color:var(--primary);}
